@@ -13,17 +13,15 @@ export default function App() {
   return (
     <Router>
       <Routes>
-
-        {/* Provider Layout Wrapper */}
         <Route path="/provider" element={<DirectoryProviderLayout />}>
 
-          {/* Default page */}
+          {/* Default Dashboard */}
           <Route index element={<ProviderDashboard />} />
 
           {/* Dashboard */}
           <Route path="dashboard" element={<ProviderDashboard />} />
 
-          {/* Business Page */}
+          {/* Business Pages */}
           <Route path="business" element={<BusinessSetup />} />
           <Route path="branches" element={<ManageBranches />} />
           <Route path="services" element={<ServiceList />} />
